@@ -1,4 +1,4 @@
-# linux-virtuala---
+# linux-virtualaization
 #### Part 1: Introduction to Virtualization Concepts
 
 1. __Virtualization:__ Virtualization is the process of creating virtual instances of computer resources, such as operating systems, storage, and networks, allowing multiple environments to run on a single physical system.
