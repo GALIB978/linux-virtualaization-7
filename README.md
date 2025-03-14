@@ -1,18 +1,14 @@
-# linux-virtualaization-7
-Introduction to Virtualization Concepts
-Virtualization
-Virtualization is the technology that allows multiple virtual environments to run on a single physical system. This can be done through virtual machines or containers. Virtualization improves resource utilization and enables better isolation of applications.
+# linux-virtuala---
+#### Part 1: Introduction to Virtualization Concepts
 
-Hypervisor
-A hypervisor is software that creates and manages virtual machines on a host system. There are two types of hypervisors:
+1. __Virtualization:__ Virtualization is the process of creating virtual instances of computer resources, such as operating systems, storage, and networks, allowing multiple environments to run on a single physical system.
 
-Type 1: Runs directly on the hardware.
-Type 2: Runs on top of an existing OS.
-Virtual Machines (VMs)
-A VM is a software-based simulation of a physical computer. Each VM runs its own operating system, and VMs are isolated from one another.
+2. __Hypervisor:__ A hypervisor is a software layer that enables virtualization by allowing multiple virtual machines (VMs) to share the same physical hardware.
 
-Containers
-Containers provide an isolated environment for running applications. Unlike VMs, containers share the host OS’s kernel but run in separate user spaces, making them lightweight.
+3. __Virtual Machines (VMs):__ VMs are software-based emulations of a physical computer, running an OS and applications as if they were on a dedicated machine.
+
+4. __Containers:__ Containers are lightweight, portable environments that package an application along with its dependencies, ensuring consistency across different environments.
+ization-7
 
  __Key Differences Between VMs and Containers:__
 
@@ -22,3 +18,7 @@ Containers provide an isolated environment for running applications. Unlike VMs,
 | Requires more resources | Lightweight |
 | Strong isolation, each VM runs separately | Process-level isolation |
 |  Slightly slower due to full OS overhead | Faster startup  |
+
+
+
+
