@@ -39,41 +39,41 @@ Found result:
 
  List Running Instances
  Command
- 
+``` 
 sudo multipass launch
-
+``` 
 
 result:
 ![Screenshot 2025-03-10 142607](https://github.com/user-attachments/assets/50159d9b-6cac-4070-8456-2c3d6a9715d5)
 
 __List Running Instances__
  Command: 
-
+``` 
 sudo multipass list
-
+``` 
 Result:
 ![Screenshot 2025-03-10 142920](https://github.com/user-attachments/assets/fad4764e-5c0c-4228-b508-16f69a485e6d)
 
 __Multipass instance info:__
 Command:
-
+``` 
 sudo multipass info teeming-imp
-
+``` 
 Result:
 ![Screenshot 2025-03-10 145110](https://github.com/user-attachments/assets/a23c9287-536b-4f00-83e4-55e2ac9b9e45)
 
 _Multipass Shell access:_
 Command:
-
+``` 
 sudo multipass shell teeming-imp
-
+``` 
 I created a file in the instance home directory and named it 'hello_world.txt'.
 Now trying to read the file outside the instance using the cat command.
 
 Command:
-
+``` 
 sudo multipass exec teeming-imp -- cat hello_world.txt
-
+``` 
 Result:
 ![Screenshot 2025-03-10 145929](https://github.com/user-attachments/assets/87ab376b-9d90-4a00-adf2-2d8aa93da1a3)
 
@@ -81,17 +81,15 @@ Result:
 _Stop a Running Instance_
 
 Command
-
+``` 
 sudo multipass stop teeming-imp
-
+``` 
 
 _Deleting Instance_
-
+``` 
 sudo multipass delete teeming-imp
-
-
 sudo multipass list
-
+``` 
 Result:
 ![Screenshot 2025-03-10 151321](https://github.com/user-attachments/assets/788dbee7-47d6-4182-ab1b-7b649c7bb751)
 
@@ -105,34 +103,34 @@ The config file will install some basic packeges and after successfully starting
 
 _Commnad:_
 
-
+``` 
 sudo multipass launch --name galib cloud-init --cloud-init cloud-init.yml
-
+``` 
 ![Screenshot 2025-03-10 155319](https://github.com/user-attachments/assets/e26bc3a4-e023-4911-a4d7-5cd8cc525753)
 
 
 Accessed shell using
 
-
+``` 
 sudo multipass shell cloud-init
-
+``` 
 ![Screenshot 2025-03-14 172642](https://github.com/user-attachments/assets/4871e07f-6d94-4136-84fd-c9e23c9b8648)
 
 
 Now checking if the user rafsan_cloud exist.
 _command:_
 
-
+``` 
 cat /etc/passwd | grep rafsan_cloud
-
+``` 
 ![Screenshot 2025-03-14 153134](https://github.com/user-attachments/assets/a8708711-7760-4022-8cd5-ba05c639588b)
 
 
 
 Verifying welcome.txt
-
+``` 
 sudo cat /home/rafsan_cloud/welcome.txt
-
+``` 
 _Result:_
 ![Screenshot 2025-03-14 153259](https://github.com/user-attachments/assets/28050122-6899-4dea-be75-4d220e98cc53)
 
@@ -145,10 +143,7 @@ Then mounted the folder on the host machine using:
 ```
 sudo multipass mount ~/host_machine cloud-init:/home/ubuntu/shared_folder
 
-
-
 Creating a test file in the host machine.
-
 
 echo "Hello from the host!" > ~/shared-folder/hostfile.txt
 ```
