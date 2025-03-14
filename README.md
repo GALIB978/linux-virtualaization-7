@@ -113,7 +113,7 @@ The config file will install some basic packeges and after successfully starting
 _Commnad:_
 
 ``` 
-sudo multipass launch --name galib cloud-init --cloud-init cloud-init.yml
+sudo multipass launch --name galib --cloud-init cloud-init.yml
 ``` 
 ![Screenshot 2025-03-10 155319](https://github.com/user-attachments/assets/e26bc3a4-e023-4911-a4d7-5cd8cc525753)
 
