@@ -29,12 +29,21 @@ _Source Used:_ [Canonical Install Guide](https://canonical.com/multipass/docs/in
 _Steps:_
 
 To install multipass:
+```
 sudo snap install multipass
-
+```
 Found result:
 
 <img width="481" alt="Screenshot 2025-03-10 142516" src="https://github.com/user-attachments/assets/f77a6fe1-7d58-4cb0-a25c-6acb488e4ac1" />
 
+Checking if its installed correctly or not by running this command:
+```
+ls -l /var/snap/multipass/common/multipass_socket
+```
+Expected result:
+```
+srw-rw---- 1 root sudo 0 Dec 19 09:47 /var/snap/multipass/common/multipass_socket
+```
 ## Basic commands
 
  List Running Instances
