@@ -112,7 +112,7 @@ sudo multipass launch --name galib cloud-init --cloud-init cloud-init.yml
 Accessed shell using
 
 ``` 
-sudo multipass shell cloud-init
+sudo multipass shell galib
 ``` 
 ![Screenshot 2025-03-14 172642](https://github.com/user-attachments/assets/4871e07f-6d94-4136-84fd-c9e23c9b8648)
 
