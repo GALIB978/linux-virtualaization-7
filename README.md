@@ -117,11 +117,11 @@ sudo multipass shell galib
 ![Screenshot 2025-03-14 172642](https://github.com/user-attachments/assets/4871e07f-6d94-4136-84fd-c9e23c9b8648)
 
 
-Now checking if the user rafsan_cloud exist.
+Now checking if the user galib exist.
 _command:_
 
 ``` 
-cat /etc/passwd | grep rafsan_cloud
+cat /etc/passwd | grep galib
 ``` 
 ![Screenshot 2025-03-14 153134](https://github.com/user-attachments/assets/a8708711-7760-4022-8cd5-ba05c639588b)
 
@@ -129,19 +129,19 @@ cat /etc/passwd | grep rafsan_cloud
 
 Verifying welcome.txt
 ``` 
-sudo cat /home/rafsan_cloud/welcome.txt
+sudo cat /home/galib/welcome.txt
 ``` 
 _Result:_
 ![Screenshot 2025-03-14 153259](https://github.com/user-attachments/assets/28050122-6899-4dea-be75-4d220e98cc53)
 
-Using sudo because the file was created by root and was accessable by rafsan_cloud.
+Using sudo because the file was created by root and was accessable by galib.
 ![Screenshot 2025-03-14 153652](https://github.com/user-attachments/assets/f9d7659a-b352-4115-b18a-852403d38dc5)
 
 
 Then mounted the folder on the host machine using:
 
 ```
-sudo multipass mount ~/host_machine cloud-init:/home/ubuntu/shared_folder
+sudo multipass mount ~/host_machine galib:/home/ubuntu/shared_folder
 
 Creating a test file in the host machine.
 
