@@ -31,12 +31,12 @@ To install multipass:
 ```
 snap install multipass
 ```
-Checking if its installed correctly or not by running this command:
-```
-ls -l /var/snap/multipass/common/multipass_socket
-```
 Found result:
 <img width="481" alt="Screenshot 2025-03-10 142516" src="https://github.com/user-attachments/assets/f77a6fe1-7d58-4cb0-a25c-6acb488e4ac1" />
 
 
+Checking if its installed correctly or not by running this command:
+```
+ls -l /var/snap/multipass/common/multipass_socket
+```
 
