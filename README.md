@@ -20,5 +20,23 @@ ization-7
 |  Slightly slower due to full OS overhead | Faster startup  |
 
 
+#### Part 2: Working with Multipass:
+Following the Source Guide
+__Source Used:__ [Canonical Install Guide](https://canonical.com/multipass/docs/install-multipass)
+
+__Steps:__
+
+To install multipass:
+
+```
+snap install multipass
+```
+Checking if its installed correctly or not by running this command:
+```
+ls -l /var/snap/multipass/common/multipass_socket
+```
+Found result:
+<img width="481" alt="Screenshot 2025-03-10 142516" src="https://github.com/user-attachments/assets/f77a6fe1-7d58-4cb0-a25c-6acb488e4ac1" />
+
 
 
