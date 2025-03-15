@@ -157,15 +157,54 @@ Creating a test file in the host machine.
 echo "Hello from the host!" > ~/shared-folder/hostfile.txt
 ```
 
+## Part 3: Exploring LXD
+
+### Installation
+```
+sudo snap install lxd
+```
+Result:
+![Screenshot 2025-03-15 102906](https://github.com/user-attachments/assets/cee24b20-b8d6-4f0c-aeed-476ac411f3ee)
+
+Then,,
+```
+sudo lxd init
+```
+Result:
+![Screenshot 2025-03-15 105308](https://github.com/user-attachments/assets/7210c79f-df9d-4c92-ba8f-673ceec25a36)
 
 
+### Basic LXD Commands
+```
+sudo lxc launch ubuntu:24.04 my-container
+```
+Result:
+![Screenshot 2025-03-15 105438](https://github.com/user-attachments/assets/0ea07bc8-2d80-4a1f-8ed2-1bb5ac5e2677)
 
+Then,
 
+```
+sudo lxc list
+```
+Result:
+![Screenshot 2025-03-15 105532](https://github.com/user-attachments/assets/e4bc47e9-6da0-46c1-922e-e64121b78df6)
 
+Then,
 
+```
+sudo lxc exec my-container -- bash
+```
+Result:
+![Screenshot 2025-03-15 110640](https://github.com/user-attachments/assets/378a07df-e039-431d-99ea-3a9948c2ec7a)
 
-
-
+Then,
+```
+sudo lxc stop my-container
+```
+Then,
+```
+sudo lxc delete my-container
+```
 
 
 
