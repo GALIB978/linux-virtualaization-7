@@ -283,9 +283,17 @@ Result:
 ![Screenshot 2025-03-16 113618](https://github.com/user-attachments/assets/2da63b55-d381-4637-80ab-0788baac94dc)
 
 
+## Part 5: Snaps for Self-Contained Applications
+### Research on Snapcraft:
+Snapcraft packages applications with their dependencies for seamless execution across Linux distros.
+### Creating a Snap Package:
+Installed Snapcraft:
+```
+sudo snap install snapcraft --classic
+```
 
-
-
+Result:
+![Screenshot 2025-03-16 121654](https://github.com/user-attachments/assets/31f9f61c-ca8f-4828-91ac-c63b934ffcb5)
 
 
 
