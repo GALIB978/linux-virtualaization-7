@@ -206,6 +206,113 @@ Then,
 sudo lxc delete my-container
 ```
 
+## Part 4: Using Docker
+### Installation:
+
+```
+sudo apt install docker.io -y
+sudo systemctl enable --now docker
+```
+
+### Basic Docker Commands:
+# Test Docker installation
+```
+sudo docker run hello-world 
+```
+
+Result:
+![Screenshot 2025-03-16 105954](https://github.com/user-attachments/assets/2a75fe1d-9422-45a6-b3d4-ec97309e657a)
+
+
+# Pull Ubuntu image
+```
+sudo docker pull ubuntu:latest
+```
+
+Result:
+![Screenshot 2025-03-16 110039](https://github.com/user-attachments/assets/a3f1cb1e-a978-4c75-ba75-1d8e3b466281)
+
+# Start Ubuntu container
+```
+sudo docker run -it ubuntu bash
+```
+Then write, exit
+Result:
+![Screenshot 2025-03-16 110335](https://github.com/user-attachments/assets/a417c57d-41ce-4ec9-8ee5-5bd7a86bc57c)
+
+# List running containers
+
+```
+sudo docker ps -a
+```
+
+Result:
+![Screenshot 2025-03-16 111802](https://github.com/user-attachments/assets/f4d743c4-b1df-4401-a47f-7ed17fe4cc0b)
+
+# Stop container
+```
+sudo docker stop 3f4958fc3880
+```
+
+# Remove container
+```
+sudo docker rm 3f4958fc3880
+```
+
+### Dockerfile Experiment:
+Created a simple `Dockerfile`:
+
+Command:
+```
+nano Dockerfile
+```
+
+The file is:
+![Screenshot 2025-03-16 113251](https://github.com/user-attachments/assets/c48dbe30-2af6-49ed-8751-fe5fb21d85e1)
+
+# Build the Docker Image
+```
+sudo docker build -t my-nginx .
+````
+
+# Run the Container
+```
+sudo docker run -d -p 8080:80 my-nginx
+````
+Result:
+![Screenshot 2025-03-16 113618](https://github.com/user-attachments/assets/2da63b55-d381-4637-80ab-0788baac94dc)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
