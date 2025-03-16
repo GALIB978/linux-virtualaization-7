@@ -296,19 +296,22 @@ Result:
 ![Screenshot 2025-03-16 121654](https://github.com/user-attachments/assets/31f9f61c-ca8f-4828-91ac-c63b934ffcb5)
 
 
+created the "snapcraft.yaml" file.
+![Screenshot 2025-03-16 141401](https://github.com/user-attachments/assets/d0022e64-fba2-4674-af57-bbdbe2d65ee7)
 
+Built and installed Snap:
+```
+snapcraft
+```
+Result:
+![Screenshot 2025-03-16 141300](https://github.com/user-attachments/assets/2dfd3357-bde3-436b-b3bc-788dd65e9fc6)
 
-
-
-
-
-
-
-
-
-
-
-
+Then
+```
+sudo snap install my-snap_1.0_amd64.snap --dangerous
+```
+Result:
+![Screenshot 2025-03-16 141320](https://github.com/user-attachments/assets/d3676bc1-3489-4316-a431-0a8aee035303)
 
 
 
